@@ -40,7 +40,7 @@ namespace Block2Lab
 
             foreach (Product product in products)
             {
-                //string goes here
+                //string goes here with names of prducts and their sale price
                 Console.WriteLine(product.SalePrice());
 
             };
