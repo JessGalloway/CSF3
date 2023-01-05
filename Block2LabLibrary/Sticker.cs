@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Block2Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Block2LabLibrary
 {
-    public sealed class Sticker : Product
+    public sealed class Sticker : Product, IInventoriables
     {
 
         //fields
@@ -29,15 +30,24 @@ namespace Block2LabLibrary
 
         //ctors
 
-        public Sticker(int Id, string Name, decimal Price, decimal width, bool isBackgroundTransparent) : base(Id,Name,Price)
+        public Sticker(int Id, string Name, decimal Price, decimal width, bool isBackgroundTransparent, int inStock, int orderQty) : base(Id,Name,Price,inStock, orderQty)
         {
             Width = width;
             IsBackgroundTransparent = isBackgroundTransparent;
+            OrderQty = orderQty;
         }
 
         public Sticker() { }
 
         //methods
+
+        public override int GetOrderQty()
+        {
+
+            int Qty = InStock - OrderQty;
+            return Qty;
+        }
+
 
         public override string ToString()
         {
