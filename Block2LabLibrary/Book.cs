@@ -1,18 +1,21 @@
-﻿using System;
+﻿using Block2Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Block2LabLibrary
 {
-    public sealed class Book : Product
+    public sealed class Book : Product, IInventoriables
     {
         //fields
         
         private string _author;
         private string _genre;
         private int _nbrPages;
+       
 
         //props
 
@@ -34,20 +37,34 @@ namespace Block2LabLibrary
             set { _nbrPages = value; }
         }
 
+      
+
 
         //ctors
 
-        public Book(int Id, string Name, decimal price, string author, string genre, int nbrPages) : base ( Id, Name, price)
+        
+
+        public Book(int Id, string Name, decimal price, string author, string genre, int nbrPages, int inStock, int orderQty) : base ( Id, Name, price, inStock, orderQty)
         {
             Author = author;
             Genre = genre;
             NbrPages = nbrPages;
+            OrderQty = orderQty;
+          
         }
 
 
         public Book() { }
 
         //methods
+
+        public override int GetOrderQty()
+        {
+            int Qty = InStock - OrderQty;
+
+            return Qty;
+        }
+
 
         public override string ToString()
         {
