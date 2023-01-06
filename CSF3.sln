@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Block2Interfaces", "Block2I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{B822C882-A276-4085-80D7-747B5B32F86F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenge1", "CodeChallenge1\CodeChallenge1.csproj", "{08C3EB17-F73C-469E-8CF7-EFA8325C61A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{B822C882-A276-4085-80D7-747B5B32F86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B822C882-A276-4085-80D7-747B5B32F86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B822C882-A276-4085-80D7-747B5B32F86F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C3EB17-F73C-469E-8CF7-EFA8325C61A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C3EB17-F73C-469E-8CF7-EFA8325C61A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C3EB17-F73C-469E-8CF7-EFA8325C61A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C3EB17-F73C-469E-8CF7-EFA8325C61A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
