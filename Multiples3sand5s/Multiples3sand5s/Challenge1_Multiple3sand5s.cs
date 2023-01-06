@@ -11,30 +11,16 @@
          */
 
 
-        //int[] below1000 = new int[1000];
-
-        //for (int i = 0; i < below1000.Length; i++)
-        //{
-        //    below1000[i] = i;
-
-
-        //}
 
         var below1000 = Enumerable.Range(1, 1001).ToArray();
         foreach (int i in below1000)
         {
 
-            if (1000 % i == 0 && i > 0) 
+            if (i % 3 == 0 || i % 5 == 0)
             {
-                
-                int naturalNumb = i;
-                Console.WriteLine($" A natural numbers that devides evenly into 1000 and is below 1000 is {naturalNumb}");
-                
-                
-                //how to catch naturalNumb variable in a collection?
-                //cannot use 
-
+                Console.WriteLine(i);
             }
+           
                                   
         }
 
