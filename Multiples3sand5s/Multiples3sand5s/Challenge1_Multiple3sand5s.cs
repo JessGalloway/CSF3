@@ -31,7 +31,8 @@
                 Console.WriteLine($" A natural numbers that devides evenly into 1000 and is below 1000 is {naturalNumb}");
                 
                 
-
+                //how to catch naturalNumb variable in a collection?
+                //cannot use 
 
             }
                                   
