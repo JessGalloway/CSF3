@@ -10,6 +10,10 @@
 
             b. Find the sum of all multiples of 3 or 5 below 1000 and print it out to the console.
 
+            C. if a multiple of 3 print fizz 
+            d if multifple of 5 print buzz
+            e. if both print fize buzz
+
 
              */
 
@@ -17,10 +21,11 @@
 
             foreach (var item in numbBellow1000)
             {
-                if (item % 3 == 0 || item % 5 == 0)
+                if (item % 3 == 0 )
                 {
-                    Console.WriteLine(item);
+                    Console.WriteLine(item + "fizz");
                 }
+                else if (item % )
             }
 
 
